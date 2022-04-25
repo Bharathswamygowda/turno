@@ -177,47 +177,6 @@ button.submit:hover{
 
 
 
-
-
-
-@media only screen and (max-width: 1023px) {
-
-
-    header{
-        padding: 0.5rem 1rem;
-    }
-
-    .container {
-        padding: 2rem 1rem;
-    }
-    
-    .widget-peding {
-        padding: 0 1rem 1rem;
-    }
-
-
-    .parameters-container{
-        display:block;
-    }
-
-   
-
-    .widget-peding p{
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .parameters-container-item {
-        margin-bottom: 2rem;
-    }
-
-  
-
-
-} 
-
-
-
 /* modal */
 
 .modal {
@@ -317,3 +276,55 @@ to { transform: translatex(1350px);}
 from { transform: translateX(-255px);}
 to { transform: translatex(1350px);}
 }
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+header{
+padding: 0.5rem 1rem;
+}
+
+.container {
+padding: 2rem 1rem;
+}
+
+.widget-peding {
+padding: 0 1rem 1rem;
+}
+
+
+.parameters-container{
+display:block;
+}
+
+
+
+.widget-peding p{
+margin-top: 2rem;
+margin-bottom: 1.5rem;
+}
+
+.parameters-container-item {
+margin-bottom: 2rem;
+}
+
+.modal-content {
+width:80%;
+}
+
+.truck{
+    width: 4.5%;
+    bottom: 0;
+}
+
+.car{
+    width: 5%;
+    bottom: -0.3rem;
+}
+
+
+
+
+} 
