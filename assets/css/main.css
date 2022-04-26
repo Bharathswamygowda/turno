@@ -32,6 +32,17 @@ margin-top: 1.5rem;
     margin-top: 2.5rem;
     }
 
+.mb-0{
+    margin-bottom:0;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:2rem;
+}
+
 header{
     height: 60px;
     position: sticky;
@@ -235,7 +246,7 @@ font-size: 1.2rem;
   
 .grd-text{
 font-weight: 700;
-font-size: 2rem;
+font-size: 2.5rem;
 margin-bottom:0;
 text-transform: uppercase;
 background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); 
@@ -278,6 +289,29 @@ from { transform: translateX(-255px);}
 to { transform: translatex(1350px);}
 }
 
+.image-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+}
+
+
+.modal-footer{
+    width: 20%;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 1023px) {
@@ -304,7 +338,6 @@ display:block;
 
 .widget-peding p{
 margin-top: 2rem;
-margin-bottom: 1.5rem;
 }
 
 .parameters-container-item {
@@ -325,7 +358,29 @@ width:80%;
     bottom: -0.4rem;
 }
 
+.d-flex p{
+margin-top:0;
+}
 
+.modal-footer{
+    width: 50%;
+}
 
 
 } 
+
+
+@media only screen and (max-width: 767px) {
+
+
+    @keyframes drift {
+        from { transform: translateX(-255px);}
+        to { transform: translatex(767px);}
+        }
+        
+        @keyframes truckdrift {
+        from { transform: translateX(-255px);}
+        to { transform: translatex(767px);}
+        }
+
+}

@@ -63,13 +63,16 @@
                 </div>
 
                 <div class="parameters-container-item">
-                    <p>Load</p>
+
+                    <div class="d-flex">
+                    <p class="mb-0">Load</p>
+                    <div>
+                    <span class="small-value" id="slider-range-value"></span> 
+                    <span class="small-value">kg</span> </div>
+            </div>
+
+
                    <div id="slider-range"></div>
-
-                   <div class="text-center mt-1">
-                   <span class="small-value" id="slider-range-value"></span> <span class="small-value">kg</span>
-                </div>
-
                     </div>
 
 
@@ -78,21 +81,33 @@
               <div class="parameters-container mt-2">
 
                 <div class="parameters-container-item">
-                    <p>Driving Range</p>
+                   
+                <div class="d-flex">
+                    <p class="mb-0">Driving Range</p>
+
+                    <div>
+                    <span class="small-value" id="driving-range-value"></span> <span class="small-value">kms</span>
+                    </div>
+                </div>
+
+
                     <div id="driving-range"></div>
  
-                    <div class="text-center mt-1">
-                    <span class="small-value" id="driving-range-value"></span> <span class="small-value">kms</span>
-                 </div>
+                    
                 </div>
 
                 <div class="parameters-container-item">
-                    <p>Fuel Spend per Month</p>
+                    <div class="d-flex">
+                    <p class="mb-0">Fuel Spend per Month</p>
+
+                    <div>
+                        <span class="small-value" id="fule-range-value"></span> <span class="small-value">KMs</span>
+                     </div>
+
+                </div>
                    <div id="fule-range"></div>
 
-                   <div class="text-center mt-1">
-                   <span class="small-value" id="fule-range-value"></span> <span class="small-value">KMs</span>
-                </div>
+                   
 
                     </div>
 
@@ -103,21 +118,32 @@
               <div class="parameters-container mt-2">
 
                 <div class="parameters-container-item">
-                    <p>Working days per Month</p>
+
+                    <div class="d-flex">
+                    <p class="mb-0">Working days per Month</p>
+
+                    <div>
+                        <span class="small-value" id="month-range-value"></span> <span class="small-value">Days</span>
+                     </div>
+
+                    </div>
                     <div id="month-range"></div>
  
-                    <div class="text-center mt-1">
-                    <span class="small-value" id="month-range-value"></span> <span class="small-value">Days</span>
-                 </div>
+                   
                 </div>
 
                 <div class="parameters-container-item">
-                    <p>Maintenance Cost per Month</p>
+                    <div class="d-flex">
+                    <p class="mb-0">Maintenance Cost per Month</p>
+
+                    <div>
+                        <span class="small-value" id="Maintenance-range-value"></span> <span class="small-value">Rs</span>
+                     </div>
+
+                </div>
                    <div id="Maintenance-range"></div>
 
-                   <div class="text-center mt-1">
-                   <span class="small-value" id="Maintenance-range-value"></span> <span class="small-value">Rs</span>
-                </div>
+                  
 
                     </div>
 
@@ -154,8 +180,12 @@
 
             <div class="mt-2">
                 <p>Period</p>
-            <input type="text" value="1 Year"/>
-            </div>
+                <select>
+                    <option value="1">1 Month</option>
+                    <option value="2">6 Month</option>
+                    <option value="2">1 Year</option>
+                  </select>           
+                 </div>
 
         </div>
 
@@ -184,33 +214,32 @@
 
 <div class="modal-body">
 
-    <div class="parameters-container">
+        
+
         <div class="parameters-container-item text-center">
             <h1>Savings per month</h1>
             <p class="grd-text">3,000</p>
         </div>
 
-        <div class="parameters-container-item text-center">
-            <h1>Savings per year</h1>
-            <p class="grd-text">36,000</p>
-            
-        </div>
-    </div>
 
-<div class="parameters-container mt-2" style="align-items:center;">
-
-<p>In 3 months, you can save enough for</p>
-<p class="common-box">Share <img src="assets/images/whatsapp.png"/></p>
-</div>
-
+<div class="image-container mt-2">
+<img class="save_img" src="assets/images/mobile.png"/>
+<img class="save_img" src="assets/images/mobile.png"/>
 <img class="save_img" src="assets/images/mobile.png"/>
 
+
 </div>
+
 
 </div>
 
 </div>
 
+<div class="modal-footer">
+  <img src="assets/images/share.png"/>  share
+    </div>
+
+</div>
 
 
 
