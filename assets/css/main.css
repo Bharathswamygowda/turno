@@ -187,6 +187,10 @@ button.submit:hover{
 }
 
 
+#image-1, #image-2, #image-3{
+display: none;
+}
+
 
 
 /* modal */

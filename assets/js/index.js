@@ -138,14 +138,43 @@ var kmCharge = $('#km-charge').val();
 var drivingRange = $('#driving-range-value').text()
 
 // saving per month
-var fuleSpend = $('#fule-range-value').text()
-var fuleEV = (fullCharge/kmCharge)*drivingRange
-var monthRange = $('#month-range-value').text()
-var maintenanceRange = $('#Maintenance-range-value').text()
+var fuleSpend = Math.floor($('#fule-range-value').text())
+var fuleEV = Math.floor((fullCharge/kmCharge)*drivingRange)
+var monthRange = Math.floor($('#month-range-value').text())
+var maintenanceRange = Math.floor($('#Maintenance-range-value').text())
 var maintenanceEv = $('#maintenance-ev').val()
+
+console.log(fuleSpend)
 
 var savingMonth = ((fuleSpend-fuleEV)*monthRange) + (maintenanceRange - maintenanceEv)
 
 $('.grd-text').text(savingMonth)
+
+
+var modal_1 = 10000
+var modal_2 = 50000
+var modal_3 = 100000
+
+if(modal_1>=savingMonth){
+    $('#image-1').css('display','grid')
+    $('#image-2').hide()
+    $('#image-3').hide()
+}
+
+else if(modal_2>=savingMonth){
+    $('#image-2').css('display','grid')
+    $('#image-3').hide()
+    $('#image-1').hide()
+}
+
+else if(modal_3>=savingMonth){
+    $('#image-3').css('display','grid')
+    $('#image-2').hide()
+    $('#image-1').hide()
+
+}
+
+
+
 
 })
