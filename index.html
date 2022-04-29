@@ -39,7 +39,7 @@
     <div class="parameters-container-item widget">
 
             <div class="widget-title">
-                <h4>Organizational Statistics</h4>
+                <h4>Your Vehical</h4>
             </div>
 
             <div class="widget-peding">
@@ -98,10 +98,10 @@
 
                 <div class="parameters-container-item">
                     <div class="d-flex">
-                    <p class="mb-0">Fuel Spend per Month</p>
+                    <p class="mb-0">Fuel Spend per Day</p>
 
                     <div>
-                        <span class="small-value" id="fule-range-value"></span> <span class="small-value">KMs</span>
+                        <span class="small-value" id="fule-range-value"></span> <span class="small-value">Rs</span>
                      </div>
 
                 </div>
@@ -161,21 +161,21 @@
     <div class="parameters-container-item widget">
         
         <div class="widget-title">
-            <h4>Organizational Statistics</h4>
+            <h4>Electric Vehical</h4>
         </div>
 
         <div class="widget-peding">
             <p>Charging cost per Full charge</p>
-            <input type="text" value="70"/>
+            <input id="full-charge" type="text" value="70"/>
 
             <div class="mt-2">
                 <p>Km per full charge</p>
-            <input type="text" value="80"/>
+            <input id="km-charge" type="text" value="80"/>
             </div>
 
             <div class="mt-2">
-                <p>Maintenance cost per month for EV</p>
-            <input type="text" value="500"/>
+                <p>Maintenance cost/month</p>
+            <input id="maintenance-ev" type="text" value="500"/>
             </div>
 
             <div class="mt-2">
@@ -218,7 +218,7 @@
 
         <div class="parameters-container-item text-center">
             <h1>Savings per month</h1>
-            <p class="grd-text">3,000</p>
+            <p class="grd-text"></p>
         </div>
 
 

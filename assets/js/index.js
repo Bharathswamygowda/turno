@@ -11,10 +11,10 @@ var rangeSliderValueElement = document.getElementById('slider-range-value');
 
 noUiSlider.create(rangeSlider, {
 start: [500],
-step: 500,
+step: 100,
 range: {
-'min': [500],
-'max': [50000]
+'min': [100],
+'max': [2000]
 }
 });
 
@@ -26,11 +26,11 @@ rangeSliderValueElement.innerHTML = values[handle];
 var drivingrange = document.getElementById('driving-range');
 
 noUiSlider.create(drivingrange, {
-start: [1],
+start: [50],
 step: 5,
 range: {
-'min': [0],
-'max': [500]
+'min': [5],
+'max': [200]
 }
 });
 
@@ -46,11 +46,11 @@ var fulerange = document.getElementById('fule-range');
 var fulerangeValueElement = document.getElementById('fule-range-value');
 
 noUiSlider.create(fulerange, {
-start: [100],
+start: [500],
 step: 100,
 range: {
 'min': [100],
-'max': [1000]
+'max': [2000]
 }
 });
 
@@ -69,8 +69,8 @@ noUiSlider.create(monthrange, {
 start: [26],
 step: 1,
 range: {
-'min': [0],
-'max': [31]
+'min': [1],
+'max': [30]
 }
 });
 
@@ -85,10 +85,10 @@ var maintenancerangeValueElement = document.getElementById('Maintenance-range-va
 
 noUiSlider.create(maintenancerange, {
 start: [3000],
-step: 1000,
+step: 500,
 range: {
-'min': [3000],
-'max': [100000]
+'min': [0],
+'max': [5000]
 }
 });
 
@@ -122,3 +122,30 @@ if (event.target == modal) {
 modal.style.display = "none";
 }
 }
+
+
+
+// calculations
+
+
+
+$("#myBtn").on('click', function(){
+
+
+// Fule spend per day for EV
+var fullCharge = $('#full-charge').val();
+var kmCharge = $('#km-charge').val();
+var drivingRange = $('#driving-range-value').text()
+
+// saving per month
+var fuleSpend = $('#fule-range-value').text()
+var fuleEV = (fullCharge/kmCharge)*drivingRange
+var monthRange = $('#month-range-value').text()
+var maintenanceRange = $('#Maintenance-range-value').text()
+var maintenanceEv = $('#maintenance-ev').val()
+
+var savingMonth = ((fuleSpend-fuleEV)*monthRange) + (maintenanceRange - maintenanceEv)
+
+$('.grd-text').text(savingMonth)
+
+})
