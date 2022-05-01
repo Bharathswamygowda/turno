@@ -144,11 +144,23 @@ var monthRange = Math.floor($('#month-range-value').text())
 var maintenanceRange = Math.floor($('#Maintenance-range-value').text())
 var maintenanceEv = $('#maintenance-ev').val()
 
-console.log(fuleSpend)
 
-var savingMonth = ((fuleSpend-fuleEV)*monthRange) + (maintenanceRange - maintenanceEv)
+// get month
+// $(".period_select").change(function(){
+// });
+var selectedPeriod = $(".period_select").children("option:selected").val();
 
+
+var savingMonth = (((fuleSpend-fuleEV)*monthRange) + (maintenanceRange - maintenanceEv))* selectedPeriod
+
+
+
+
+$('.month').text(selectedPeriod)
 $('.grd-text').text(savingMonth)
+
+
+
 
 
 var modal_1 = 10000
@@ -156,25 +168,34 @@ var modal_2 = 50000
 var modal_3 = 100000
 
 if(modal_1>=savingMonth){
-    $('#image-1').css('display','grid')
+    $('#image-1').css('display','flex')
     $('#image-2').hide()
     $('#image-3').hide()
+
+
 }
 
+
 else if(modal_2>=savingMonth){
-    $('#image-2').css('display','grid')
+    $('#image-2').css('display','flex')
     $('#image-3').hide()
     $('#image-1').hide()
+
 }
 
 else if(modal_3>=savingMonth){
-    $('#image-3').css('display','grid')
+    $('#image-3').css('display','flex')
     $('#image-2').hide()
     $('#image-1').hide()
 
+
 }
+
+
 
 
 
 
 })
+
+

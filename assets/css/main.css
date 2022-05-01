@@ -212,7 +212,6 @@ background-color: rgba(0,0,0,0.4);
 /* Modal Content */
 .modal-content {
 position: relative;
-background-color: #fefefe;
 margin: auto;
 padding: 1rem;
 border: 1px solid #888;
@@ -222,7 +221,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 -webkit-animation-duration: 0.4s;
 animation-name: animatetop;
 animation-duration: 0.4s;
-border-radius: 2rem;
+background-image: url(../images/bg.png);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 1rem;
 }
 
 /* Add Animation */
@@ -238,28 +240,29 @@ to {top:0; opacity:1}
 
 /* The Close Button */
 .close {
-cursor:pointer;
-float: right;
+cursor: pointer;
 font-size: 28px;
 font-weight: bold;
+position: absolute;
+right: -0.9rem;
+top: -1rem;
 }
 
 .modal-body h1{
-font-size: 1.2rem;
+font-size: 1.5rem;
+font-weight:500;
+color:#fff;
 }
   
 .grd-text{
 font-weight: 700;
 font-size: 2.5rem;
 margin-bottom:0;
-text-transform: uppercase;
-background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); 
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color:#fff;
 }
 
 .modal-body img.save_img{
-width:100%;
+width:40%;
 }
 
 .common-box{
@@ -294,9 +297,8 @@ to { transform: translatex(1350px);}
 }
 
 .image-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1rem;
+   align-items: center;
+   justify-content: center;
 }
 
 
@@ -369,6 +371,16 @@ margin-top:0;
 .modal-footer{
     width: 50%;
 }
+
+.modal-body img.save_img {
+    width: 80%;
+}
+
+.modal-content{
+background-color: #BE0228;
+background-size: contain;
+}
+
 
 
 } 
