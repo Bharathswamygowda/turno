@@ -167,7 +167,6 @@ var modal_1 = 10000
 var modal_2 = 50000
 var modal_3 = 100000
 
-var text = "Savings for" +" "+selectedPeriod +" "+ "month" + " " + "=" + " " + savingMonth;
 
 
 if(modal_1>=savingMonth){
@@ -175,15 +174,20 @@ if(modal_1>=savingMonth){
     $('#image-2').hide()
     $('#image-3').hide()
 
-
     $(document).on("click", '.modal-footer', function() {
-        if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-1.png';
-        var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
-        window.location.href = whatsapp_url;
-        } 
-        });
-  
+    if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+    var modal_month = $('.month').text()
+    var modal_price = $('.grd-text').text()
+        
+    var text = "Savings for" +" "+modal_month +" "+ "month" + " " + "=" + " " + modal_price;
+    var url1 = 'https://bharathswamygowda.github.io/turno/assets/images/image-1.png';
+    var whatsapp_url1 = "whatsapp://send?text=" + url1 + '%0a' + text;
+    window.location.href = whatsapp_url1;
+    } 
+    });
+
+
 }
 
 
@@ -192,11 +196,17 @@ else if(modal_2>=savingMonth){
     $('#image-3').hide()
     $('#image-1').hide()
 
+  
     $(document).on("click", '.modal-footer', function() {
         if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-2.png';
-        var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
-        window.location.href = whatsapp_url;
+
+            var modal_month = $('.month').text()
+            var modal_price = $('.grd-text').text()
+
+        var text = "Savings for" +" "+modal_month +" "+ "month" + " " + "=" + " " + modal_price;
+        var url2 = 'https://bharathswamygowda.github.io/turno/assets/images/image-2.png';
+        var whatsapp_url2 = "whatsapp://send?text=" + url2 + '%0a' + text;
+        window.location.href = whatsapp_url2;
         } 
         });
   
@@ -212,11 +222,18 @@ else if(modal_3>=savingMonth){
 
     $(document).on("click", '.modal-footer', function() {
         if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-3.png';
-        var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
-        window.location.href = whatsapp_url;
+
+            var modal_month = $('.month').text()
+            var modal_price = $('.grd-text').text()
+
+        var text = "Savings for" +" "+modal_month +" "+ "month" + " " + "=" + " " + modal_price;
+
+        var url3 = 'https://bharathswamygowda.github.io/turno/assets/images/image-3.png';
+        var whatsapp_url3 = "whatsapp://send?text=" + url3 + '%0a' + text;
+        window.location.href = whatsapp_url3;
         } 
         });
+  
 
 }
 
