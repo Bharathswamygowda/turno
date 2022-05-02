@@ -178,7 +178,7 @@ if(modal_1>=savingMonth){
 
     $(document).on("click", '.modal-footer', function() {
         if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/Logo.png';
+        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-1.png';
         var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
         window.location.href = whatsapp_url;
         } 
@@ -194,7 +194,7 @@ else if(modal_2>=savingMonth){
 
     $(document).on("click", '.modal-footer', function() {
         if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/Logo.png';
+        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-2.png';
         var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
         window.location.href = whatsapp_url;
         } 
@@ -212,7 +212,7 @@ else if(modal_3>=savingMonth){
 
     $(document).on("click", '.modal-footer', function() {
         if (/Android|Chrome|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var url = 'https://bharathswamygowda.github.io/turno/assets/images/Logo.png';
+        var url = 'https://bharathswamygowda.github.io/turno/assets/images/image-3.png';
         var whatsapp_url = "whatsapp://send?text=" + url + '%0a' + text;
         window.location.href = whatsapp_url;
         } 
