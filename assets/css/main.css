@@ -265,6 +265,10 @@ color:#fff;
 width:40%;
 }
 
+#image-1 .save_img{
+width:30% !important;
+}
+
 .common-box{
 display: flex;
 align-items: center;
